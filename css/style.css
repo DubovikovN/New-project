@@ -1,0 +1,669 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu' , sans-serif;
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.Section_title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #001F29;
+}
+
+
+
+
+
+.header{
+    margin-bottom: 54px;
+}
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+}
+.logo{
+    transition: 0.3s;
+}
+.logo a{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #F75532;
+    text-decoration: none;
+}
+.logo_span{
+    color: black;
+}
+
+.header_menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}
+.HMenu_item a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #001F29;
+    text-decoration: none;
+}
+.HMenu_item a p{
+    transition: 0.3s;
+}
+.HMenu_selected a{
+    color: #F75532;
+}
+.header_button{
+    padding: 12px 27px;
+    border:  3px solid #F75532 ;
+    border-radius: 10px;
+    background-color: #F75532;
+    color: white;
+    transition: 0.3s;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+.HMenu_item a p:hover{
+    transform: scale(1.2);
+}
+.header_button:hover{
+    transform: scale(1.2);
+    background: none;
+    color: #001F29;
+}
+
+
+
+.hero{
+    margin-bottom: 107px;
+}
+.hero_content{
+    display: flex;
+    justify-content: space-between;
+}
+.hero_title{
+    padding-top: 22px; 
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 64px;
+}
+.hero_subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #B9C0C1; 
+    padding: 16px 0 32px 0;
+}
+.hero_buttons{
+    display: flex;
+    gap: 16px;
+}
+.hero_left_button{
+    padding: 14px 22px;
+    border: 1px solid #F75532 ;
+    border-radius: 10px;
+    background-color: #F75532;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: white;
+    transition: 0.3s;
+}
+.hero_right_button{
+    padding: 15px 30px;
+    background: none;
+    border: 1px solid #F75532;
+    border-radius: 10px;    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #F75532; 
+    transition: 0.3s;
+}
+.hero_left_button:hover , .hero_right_button:hover{
+    background: none;
+    color: #F75532;
+    transform: scale(1.2);
+    margin: 0 10px;
+}
+.hero_grid{
+    display: grid;
+    grid-template: repeat(2 , 180px) / repeat(3 , 184px);
+    gap: 22px;
+}
+.hero-grid-item{
+    background-color: #FFE1D8;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.hero_grid_link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-grid1{
+    grid-area: 1;
+}
+.hero-grid2{
+    grid-area: 2 / 1;
+}
+.hero-grid3{
+    grid-area: 1 / 2;
+}
+.hero-grid4{
+    grid-area: 2 / 2;
+}
+.hero-grid5{
+    grid-area: 1 / 3 / 3 / 3;
+}
+.hero-grid5 a{
+    color: #001F29;
+}
+.hero-grid5:hover .hero_grid_text{
+    transform: rotate(0);
+    font-size: 15px;
+}
+.hero_grid_text{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    transform: rotate(90deg);
+    text-align: center;
+    transition: 0.3s;
+}
+.hero-grid-item:hover{
+    transform: scale(1.2);
+    margin: 10px;
+}
+.hero_grid_img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+
+
+
+.Vaccines_list{
+    padding-bottom: 420px;
+}
+.Vaccines_list_items{
+    display: flex;
+    gap: 16px;
+}
+.Vaccines_list_upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Vaccines_list_item{
+    /* border: 1px solid black; */
+    padding: 25px 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: min-content;
+    transition: 1s;
+    box-shadow: 10px 24px 54px 0px #0000000F;
+    border-radius: 15px;
+    position: absolute;
+}
+.Vaccines_list_item2{
+    left: 381px;
+}
+.Vaccines_list_item3{
+    left: 642px;
+}
+.Vaccines_list_item4{
+    left: 903px;
+}
+.VItem_upper{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+.VItem_title{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    padding-bottom: 10px;
+}
+.VItem_subtitle{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #B9C0C1;
+}
+.VItem_button{
+    border-radius: 30px;
+    padding: 12px 24px;
+    background: none;
+    border: 1px solid #F75532;
+    color: #F75532;
+    transition: 0.3s;
+}
+/* .VItem_logo{
+    -webkit-filter: grayscale(100%); Safari 6.0 - 9.0
+    filter: grayscale(100%);
+} */
+.VItem_button:hover{
+    transform: scale(1.2)
+}
+.VItem_button{
+    display: none;
+    transition: 0.3s;
+}
+.Vaccines_list_item:hover{
+    top: 598px;    
+}
+.Vaccines_list_item:hover .VItem_button{
+    display: block;
+}
+.Vaccines_list_burger{
+    position: absolute;
+    left: 1240px;
+    top: 668px;
+    transition: 0.3s;
+}
+.Vaccines_list_burger:hover{
+    transform: scale(1.2);
+}
+.Vaccines_list_lower{
+    position: absolute;
+    left: 286px;
+    top: 839px;
+    display: flex;
+    gap: 60px;
+}
+.VList_lower_text{
+    font-family: 'Mulish', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #B9C0C1;    
+}
+
+
+
+
+
+
+.Schedule{
+    margin-bottom: 80px;
+}
+.Schedule_title{
+
+    padding-bottom: 33px;
+}
+.Schedule_reception{
+    box-shadow: 10px 24px 54px 0px #0000000F;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Reception_item{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px 0 24px 24px;
+}
+.Reception_sign{
+    width: min-content;
+    padding: 11px 13px;
+    font-size: 18px;
+    background-color: #FFE1D8;
+    border-radius: 10px;
+    color: #F75532;
+}
+.Reception_title{
+    padding: 9px 0 14px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.Reception_input{
+    border: 1px solid #FAFAFA;
+    background-color: #FAFAFA;
+    border-radius: 10px;    
+}
+.Reception_input:focus{
+    background: none;
+    border: 1px solid #FFE1D8;
+}
+.Reception_location_input{
+    padding: 16px 73px 16px 16px;
+}
+.Reception_date_input{
+    padding: 16px 100px 16px 16px;
+    color: #ABADAD;
+}
+.Reception_select{
+    border: 1px solid #FAFAFA;
+    background-color: #FAFAFA;
+    border-radius: 10px;  
+    padding: 16px 100px 16px 16px;
+    color: #ABADAD;
+}
+::-webkit-input-placeholder{
+    color: #ABADAD;
+}
+.Reception_button{
+    padding: 14px 51px;
+    border: 1px solid #F75532;
+    border-radius: 10px; 
+    background-color: #F75532;   
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: white;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+.Reception_button:hover{
+    transform: scale(1.2);
+    background: none;
+    color: #F75532;
+}
+
+
+
+
+.Importance{
+    margin-bottom: 120px;
+}
+.Importance_title{
+    padding-bottom: 16px;
+}
+.Importance_subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #B9C0C1;
+    padding-bottom: 67px;
+}
+.Importance_items{
+    display: flex;
+    gap: 104px;
+}
+.Importance_item:nth-child(3) .Importance_item_title{
+    font-size: 16px;
+}
+.Importance_item{
+    width: 25%;
+    padding: 20px;
+    margin: -15px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.Importance_item:hover{
+    background-color: #FFE1D8;
+    transform: scale(1.2);
+}
+.Importance_item:hover .Importance_sign{
+    background-color: white;
+}
+.Importance_sign{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFE1D8;
+    border-radius: 10px;
+}
+.Importance_item_title{
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #001F29;
+}
+.Importance_item_subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ABADAD;
+}
+
+
+
+.Get{
+    margin-bottom: 80px;
+}
+.Get_title{
+    padding-bottom: 16px;
+}
+.Get_subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #ABADAD;
+}
+.Get_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 16px;
+    margin-bottom: 63px;
+}
+.Get_content{
+    padding: 33px;
+    box-shadow: 10px 24px 54px 0px #0000000F;
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.GGrid_item{
+    width: 100%;
+}
+.GGrid_title{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;   
+    padding-bottom: 14px; 
+}
+.GGrid_select, .GGrid_input{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.GGrid_select{
+    color: #ABADAD;
+}
+.GGrid_input{
+    padding: 15px 170px 15px 15px;
+    background: #FAFAFA;
+    border-radius: 10px;
+    border: 1px solid #FAFAFA;
+}
+.GGrid_select{
+    padding: 15px 225px 15px 15px; 
+    background: #FAFAFA;
+    border-radius: 10px;
+    border: 1px solid #FAFAFA;
+}
+.GGrid_input:focus{
+    background: rgba(255, 225, 216, 0.2);
+    background-blend-mode: lighten;
+    border: #F75532;
+}
+.Get_button{
+    background-color: #F75532;
+    border: 1px solid #F75532;
+    padding: 14px 18px;
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: white;
+    transition: 0.3s;
+}
+.Get_button:hover{
+    transform: scale(1.2);
+    background: none;
+    color: #F75532;
+}
+
+
+
+
+.Emergency{
+    margin-bottom: 80px;
+}
+.Emergency_content{
+    display: flex;
+    gap: 116px;
+}
+.Emergency_map{
+    margin-top: 33px;
+    border-radius: 10px;
+}
+.Emergency_subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #ABADAD;
+    padding: 31px 0;
+}
+.EGrid_sign{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFE1D8;
+    font-size: 18px;
+    color: #F75532;
+    border-radius: 10px;
+}
+.Emergency_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+}
+.EGrid_item{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px 32px 17px 24px; 
+    box-shadow: 10px 24px 54px 0px #0000000F;
+    border-radius: 10px;
+}
+.EGrid_title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px; 
+}
+.EGrid_subtitle{
+    padding: 8px 0 13px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #B9C0C1;
+}
+.EGrid_button{
+    border: 1px solid #F75532;
+    background-color: #F75532;
+    height: 40px;
+    width: 163px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    transition: 0.3s;
+}
+.EGrid_button:hover{
+    background: none;
+    transform: scale(1.2);
+    color: #F75532;
+}
+
+
+.footer{
+    margin-bottom: 40px;
+}
+.footer_right{
+    display: flex;
+    gap: 130px;
+}
+.footer_content{
+    height: 247px;
+    display: flex;
+    align-items: flex-start;
+    gap: 130px;
+    padding-top: 40px;
+}
+.footer_item_title{
+    padding-bottom: 16px;
+}
+.footer_title{
+    padding-bottom: 16px;
+    width: min-content;
+}
+.footer_subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;  
+    color: #B9C0C1;
+}
+.Site_name{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;  
+    padding-top: 20px;
+}
+.Site_name a{
+    color: #F75532;
+    transition: 0.3s;
+}
+.Site_name a:hover{
+    font-size: 20px;
+}
+.footer_menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer_menu_item a{
+    color: #ABADAD;
+    transition: 0;
+}
+.footer_menu_item a:hover{
+    color: #F75532;
+}
+
+
+
+
+
+
+
+
+
+
+
